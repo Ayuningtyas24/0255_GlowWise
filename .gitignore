@@ -1,0 +1,16 @@
+# Gradle & Android Studio build files
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+*.apk
+*.aab
+
+# Microsoft Office temporary files
+~$*.docx
+~$*.xlsx
