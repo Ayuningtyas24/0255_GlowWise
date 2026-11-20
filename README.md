@@ -56,26 +56,10 @@ Universitas Muhammadiyah Yogyakarta
 
 ## Logbook Progres Proyek
 
-### Minggu 1
-
-* **Jumat, 13 November 2026**
-  * **Aktivitas:** Analisis permasalahan terkait iritasi akibat kombinasi bahan aktif skincare (*ingredients conflict*) dan identifikasi kebutuhan pengguna. Merumuskan latar belakang, ruang lingkup solusi, serta batasan fitur aplikasi GlowWise.
-  * **Output:** Lembar analisis masalah dan ruang lingkup aplikasi.
-  * **Status:** Selesai.
-
-* **Sabtu, 14 November 2026**
-  * **Aktivitas:** Melakukan riset teknis API pendukung analisis kulit wajah (YouCam Skin Analysis API), analisis batasan arsitektur sistem (100% Compose, MVVM StateFlow, PostgreSQL tanpa Room, JWT), serta penyusunan draf dokumen SRS Bab 1 (Pendahuluan, latar belakang, tujuan, ruang lingkup produk, dan daftar istilah baku).
-  * **Output:** Draf dokumen SRS Bab 1 & catatan riset arsitektur sistem.
-  * **Status:** Selesai.
-
-### Minggu 2
-
-* **Senin, 16 November 2026**
-  * **Aktivitas:** Penyusunan dokumen Software Requirements Specification (SRS) Bab 2 (Deskripsi Umum Sistem): perumusan perspektif produk, fungsi utama sistem, karakteristik dan hak akses pengguna (Admin & User), batasan umum arsitektur teknologi, serta ringkasan kebutuhan antarmuka.
-  * **Output:** Draf dokumen SRS Bab 2.
-  * **Status:** Selesai.
-
-* **Kamis, 19 November 2026**
-  * **Aktivitas:** Inisialisasi repositori GitHub `0255_GlowWise` serta penyusunan dokumen SRS Bab 3 (Spesifikasi Kebutuhan Sistem): perumusan 7 kebutuhan fungsional (termasuk 5 fitur CRUDS penuh), kebutuhan non-fungsional, serta pemodelan sistem menggunakan diagram UML (Use Case Diagram, Flowchart alur sistem, dan Activity Diagram 3 jalur: Actor, Aplikasi, Database).
-  * **Output:** Repositori GitHub `0255_GlowWise`, Dokumen SRS Lengkap (Bab 1–3), dan Diagram Pemodelan Sistem.
-  * **Status:** Selesai.
+| Minggu ke- | Hari & Tanggal | Aktivitas Pengerjaan | Output / Hasil | Status | Hash Commit |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| **Minggu 1** | Jumat, 13 Nov 2026 | Inisialisasi repositori GitHub `0255_GlowWise`, konfigurasi `.gitignore`, serta perumusan awal batasan fitur aplikasi GlowWise. | Repositori GitHub terinisialisasi, berkas `.gitignore`, dan lembar batasan fitur | ✅ Selesai | `f9b1a09` |
+| **Minggu 1** | Sabtu, 14 Nov 2026 | Riset batasan teknis (100% Compose, MVVM StateFlow, PostgreSQL tanpa Room, JWT, YouCam API) serta penyusunan dokumen SRS Bab 1 sampai Bab 3. | Draf dokumen SRS Bab 1–3 & catatan arsitektur sistem | ✅ Selesai | `1f8892e` |
+| **Minggu 2** | Senin, 16 Nov 2026 | Penyusunan dokumentasi proyek pada `README.md`, pencatatan identitas mahasiswa, dan perincian 10 kriteria fitur aplikasi. | Berkas dokumentasi `README.md` terstruktur | ✅ Selesai | `8adcc8c` |
+| **Minggu 2** | Kamis, 19 Nov 2026 | Perancangan 5 entitas relasional CRUDS, pemodelan diagram UML (Use Case & Flowchart), serta penyempurnaan rincian fitur dan logbook pada `README.md`. | Diagram Use Case, Flowchart alur sistem, dan pembaruan logbook mingguan | ✅ Selesai | `4f1a185` |
+| **Minggu 2** | Jumat, 20 Nov 2026 | Finalisasi dokumen SRS Bab 4 (Antarmuka Material 3), Bab 5 (NFR), Bab 6 (Kebutuhan Lainnya), Appendix A–C, serta pemodelan basis data konseptual ERD dan fisikal RAT. | Dokumen SRS Lengkap (Bab 1–6 & Appendix A–C), Diagram ERD, RAT, dan Matriks Relasi | ✅ Selesai | `c570a92` |
