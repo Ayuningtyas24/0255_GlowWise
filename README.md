@@ -30,7 +30,7 @@ Universitas Muhammadiyah Yogyakarta
   Penerapan arsitektur MVVM murni menggunakan `ViewModel` dan `StateFlow`.
 
 - [x] **Tabel / Data**  
-  Penggunaan 5 entitas data relasional yang saling terhubung: `skin_scans`, `skincare_ingredients`, `skincare_products`, `daily_routines`, dan `skin_progress_logs`.
+  Penggunaan 5 entitas data relasional yang saling terhubung: `skin_scans`, `skincare_ingredients`, `skincare_products`, `daily_routines`, dan `product_reviews`.
 
 - [x] **Features (CRUDS)**  
   Penyediaan 5 fitur utama dengan fungsi CRUDS lengkap (Create, Read, Update, Delete, Search):
@@ -38,7 +38,7 @@ Universitas Muhammadiyah Yogyakarta
   2. Master Bahan Aktif
   3. Katalog Produk Skincare
   4. Rutinitas Harian (AM/PM)
-  5. Jurnal Transformasi Kulit
+  5. Ulasan & Evaluasi Produk Skincare (Product Reviews)
 
 - [x] **REST API Integration**  
   Integrasi layanan eksternal YouCam Skin Analysis API via Retrofit untuk analisis kondisi kulit wajah.
