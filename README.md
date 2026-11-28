@@ -56,11 +56,51 @@ Universitas Muhammadiyah Yogyakarta
 
 ## Logbook Progres Proyek
 
-| Minggu ke- | Hari & Tanggal | Aktivitas Pengerjaan | Output / Hasil | Status | Hash Commit |
-| :---: | :---: | :---: | :---: | :---: | :---: |
-| **Minggu 1** | Jumat, 13 Nov 2026 | Analisis permasalahan iritasi kulit akibat kombinasi bahan aktif (*ingredients conflict*), identifikasi kebutuhan pengguna, serta perumusan ruang lingkup fitur GlowWise. | Lembar analisis masalah & batasan fitur aplikasi | ✅ Selesai | - |
-| **Minggu 1** | Sabtu, 14 Nov 2026 | Riset batasan teknis (100% Compose, MVVM StateFlow, PostgreSQL tanpa Room, JWT, YouCam API) serta penyusunan draf dokumen SRS Bab 1 (Pendahuluan). | Draf dokumen SRS Bab 1 & catatan arsitektur sistem | ✅ Selesai | - |
-| **Minggu 2** | Senin, 16 Nov 2026 | Penyusunan dokumen SRS Bab 2 (Deskripsi Umum Sistem: perspektif produk *client-server*, kelas pengguna Admin & User, dan batasan arsitektur). | Draf dokumen SRS Bab 2 | ✅ Selesai | - |
-| **Minggu 2** | Kamis, 19 Nov 2026 | Inisialisasi repositori GitHub `0255_GlowWise` & `.gitignore`, penyusunan SRS Bab 1 sampai Bab 3, pemodelan UML (Use Case & Flowchart), serta dokumentasi `README.md`. | Repositori GitHub terinisialisasi, berkas `.gitignore`, dokumentasi `README.md`, dan draf SRS Bab 1–3 | ✅ Selesai | `f9b1a09` s.d. `4f1a185` |
-| **Minggu 2** | Jumat, 20 Nov 2026 | Finalisasi dokumen SRS Bab 4 (Antarmuka Material 3), Bab 5 (NFR), Bab 6 (Kebutuhan Lainnya), Appendix A–C, serta pemodelan basis data konseptual ERD dan fisikal RAT. | Dokumen SRS Lengkap (Bab 1–6 & Appendix A–C), Diagram ERD, RAT, dan Matriks Relasi | ✅ Selesai | `79f2041` |
-| **Minggu 2** | Sabtu, 21 Nov 2026 | Inisialisasi proyek baru Android Studio (Empty Activity) berbasis Jetpack Compose dan konfigurasi dasar Gradle. | Struktur dasar proyek Android `0255_GlowWise` dan konfigurasi Gradle | ✅ Selesai | `9b17105` |
+Berikut adalah linimasa pengembangan proyek **GlowWise** berdasarkan riwayat pengerjaan dan *commit* GitHub:
+
+### Minggu 1 (9 November 2026 – 15 November 2026)
+
+*Fokus: Analisis Permasalahan, Riset Arsitektur Sistem & Draf Awal SRS Bab 1*
+
+- *Jumat, 13 November 2026*
+  - Melakukan analisis permasalahan dan perumusan ruang lingkup aplikasi **GlowWise**:
+    - **Identifikasi Masalah:** Analisis risiko iritasi kulit akibat kombinasi bahan aktif kosmetik yang kontraindikatif (*ingredients conflict*) serta kebutuhan pengguna awam dan admin katalog.
+    - **Pemetaan 7 Fitur Utama:** Perumusan ruang lingkup fitur Autentikasi, Scan Wajah, Bahan Aktif & *Conflict Checker*, Katalog Produk, Jadwal Rutinitas AM/PM, Ulasan Produk, dan Ekspor PDF Lokal.
+- *Sabtu, 14 November 2026*
+  - Melakukan riset batasan teknis arsitektur dan penyusunan draf awal **SRS Bab 1**:
+    - **Batasan Teknis:** 100% Jetpack Compose tanpa XML, pola MVVM (`ViewModel` + `StateFlow`), PostgreSQL terpusat via REST API tanpa Room, JWT *Access/Refresh Token* untuk multi-role Admin & User, integrasi YouCam Skin Analysis API, serta Android *Scoped Storage*.
+    - **Draf SRS Bab 1:** Penyusunan pendahuluan (*Purpose*), konvensi penulisan, ruang lingkup proyek, dan glosarium istilah awal.
+
+### Minggu 2 (16 November 2026 – 22 November 2026)
+
+*Fokus: Penyusunan Dokumen SRS Lengkap, Pemodelan UML & Basis Data, serta Inisialisasi Proyek Android*
+
+- *Senin, 16 November 2026*
+  - Penyusunan draf **SRS Bab 2 (*Overall Description*)**:
+    - Perumusan perspektif produk *client-server*, pemetaan 7 fitur sistem (`SF-01` s.d. `SF-07`), karakteristik kelas pengguna Admin dan User, lingkungan operasi Android, serta batasan desain dan asumsi API eksternal.
+- *Kamis, 19 November 2026*
+  - Inisialisasi repositori GitHub, dokumentasi proyek & penyusunan **SRS Bab 1–3** (`f9b1a09`, `1f8892e`, `8adcc8c`, `4f1a185`):
+    - **Repositori & Dokumentasi:** Inisialisasi repositori `0255_GlowWise`, konfigurasi `.gitignore`, serta penyusunan identitas mahasiswa dan daftar fitur aplikasi pada `README.md`.
+    - **SRS Bab 1–3 & UML:** Penyusunan rincian kebutuhan fungsional (`FR-AUTH` hingga `FR-FILE`) serta pemodelan awal Use Case Diagram dan Flowchart sistem.
+- *Jumat, 20 November 2026*
+  - Finalisasi **SRS Bab 4–6, Appendix A–C & Pemodelan Basis Data** (`79f2041`):
+    - **Bab 4–6 & Lampiran:** Penyusunan Antarmuka Eksternal Material 3, integrasi Retrofit/OkHttp & HTTPS JSON, Kebutuhan Non-Fungsional (NFR), Penafian Medis & Privasi Data, serta Appendix A–C (Glosarium, Model Analisis, Daftar Isu).
+    - **Pemodelan Basis Data:** Penyusunan diagram konseptual ERD, fisikal Relasi Antar Tabel (RAT), dan Matriks Relasi.
+- *Sabtu, 21 November 2026*
+  - Inisialisasi proyek Android Studio berbasis **Jetpack Compose** (`9a53a07`):
+    - **Struktur Proyek & Gradle:** Konfigurasi `build.gradle.kts`, `gradle/libs.versions.toml`, `gradle.properties`, dan `AndroidManifest.xml` pada package `com.example.a0255_glowwise`.
+    - **Tema Material 3:** Penyiapan dasar tema antarmuka (`Color.kt`, `Theme.kt`, `Type.kt`) dan sumber daya aplikasi (`res/`).
+
+### Minggu 3 (23 November 2026 – 29 November 2026)
+
+*Fokus: Penyesuaian Entitas `product_reviews`, Pemisahan Diagram CRUDS Mandiri & Finalisasi SRS*
+
+- *Rabu, 25 November 2026*
+  - Penyesuaian spesifikasi entitas CRUDS ke-5 menjadi **`product_reviews`** (`2485ba1`):
+    - Mengubah entitas ke-5 pada `README.md` dari `skin_progress_logs` menjadi `product_reviews` (Ulasan & Evaluasi Produk Skincare) agar selaras dengan 5 entitas utama (`skin_scans`, `skincare_ingredients`, `skincare_products`, `daily_routines`, `product_reviews`).
+- *Kamis, 26 November 2026 – Sabtu, 28 November 2026*
+  - Revisi menyeluruh pemodelan diagram SRS dan finalisasi dokumen `SRS_GlowWise.md` serta `SRS_GlowWise.docx`:
+    - **Diagram CRUDS Mandiri (Revisi Asdos):** Pemisahan Flowchart dan Activity Diagram menjadi diagram mandiri per aksi CRUDS (*Create, Read, Update, Delete, Search*) untuk fitur `SF-01` s.d. `SF-07` dengan aturan satu titik akhir (`Selesai`/`stop`).
+    - **Pembaruan ERD & RAT (6 Tabel):** Memasukkan entitas `product_reviews` dan memperjelas relasi antar tabel (`users`, `skin_scans`, `skincare_ingredients`, `skincare_products`, `daily_routines`, `product_reviews`) beserta aturan integritas referensial (`ON DELETE CASCADE` dan `ON DELETE RESTRICT`).
+    - **Finalisasi Dokumen SRS:** Penyelarasan seluruh Bab 1–6 dan Lampiran A–C beserta tabel matriks kebutuhan fungsional ke dalam dokumen siap pakai.
+
